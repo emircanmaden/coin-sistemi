@@ -1,0 +1,19 @@
+{
+  "name": "Get Coins - TikTok",
+  "short_name": "Get Coins",
+  "description": "TikTok coin satın alma uygulaması",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#ff3b5c",
+  "background_color": "#ffffff",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://i.hizliresim.com/9rbakal.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

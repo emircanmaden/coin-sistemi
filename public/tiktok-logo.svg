@@ -1,0 +1,15 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="40" fill="#000000"/>
+  
+  <!-- TikTok "d" shape -->
+  <g transform="translate(50, 30)">
+    <!-- Red shadow -->
+    <path d="M50 10 C70 10 80 25 80 45 L80 95 C80 115 65 120 50 120 C30 120 10 100 10 80 C10 60 30 45 50 45 C55 45 60 47 60 50 L60 20 C60 15 55 10 50 10 Z" fill="#FF0050" transform="translate(3, 3)"/>
+    
+    <!-- Cyan shadow -->
+    <path d="M50 10 C70 10 80 25 80 45 L80 95 C80 115 65 120 50 120 C30 120 10 100 10 80 C10 60 30 45 50 45 C55 45 60 47 60 50 L60 20 C60 15 55 10 50 10 Z" fill="#25F4EE" transform="translate(-3, -3)"/>
+    
+    <!-- White main -->
+    <path d="M50 10 C70 10 80 25 80 45 L80 95 C80 115 65 120 50 120 C30 120 10 100 10 80 C10 60 30 45 50 45 C55 45 60 47 60 50 L60 20 C60 15 55 10 50 10 Z" fill="#FFFFFF"/>
+  </g>
+</svg>

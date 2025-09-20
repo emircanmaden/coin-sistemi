@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 390px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 16px 16px;
+  background: #ffffff;
+  position: relative;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-right: 40px;
+}
+
+/* Profile Section */
+.profile-section {
+  padding: 16px;
+  background: #ffffff;
+}
+
+.dynamic-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.dynamic-text {
+  background: linear-gradient(45deg, #666, #999);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.plus-icon {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.coins-display {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+
+.diamond-icon {
+  font-size: 14px;
+}
+
+.coins-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tiktok-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.tiktok-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.user-details {
+  flex: 1;
+}
+
+.recharge-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.coin-balance {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.coin-icon {
+  font-size: 16px;
+}
+
+.balance {
+  font-size: 14px;
+  color: #666;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.username {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.username:hover {
+  background-color: #f0f0f0;
+}
+
+.username-input {
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0;
+}
+
+.recharge-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #00d084;
+  border-radius: 50%;
+}
+
+.recharge-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.savings-info {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.info-icon {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+/* Packages Grid */
+.packages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 0 16px 32px;
+}
+
+.package-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.package-card:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.package-card.custom-package {
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  border: 2px solid #ffd700;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.coin-amount {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.price-info .price {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.custom-text {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.payment-modal, .success-modal, .custom-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+}
+
+.payment-modal h3, .success-modal h3, .custom-modal h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.selected-package {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.payment-methods {
+  margin-bottom: 20px;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.payment-icon {
+  padding: 8px 12px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+}
+
+.payment-icon.visa { background: #1a1f71; color: white; }
+.payment-icon.mastercard { background: #eb001b; color: white; }
+.payment-icon.amex { background: #006fcf; color: white; }
+.payment-icon.jcb { background: #0e4c96; color: white; }
+.payment-icon.diners { background: #0079be; color: white; }
+.payment-icon.discover { background: #ff6000; color: white; }
+.payment-icon.paypal { background: #003087; color: white; }
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.total-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.total-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.recharge-btn, .go-back-btn {
+  width: 100%;
+  background: #ff3b5c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.recharge-btn:hover, .go-back-btn:hover {
+  background: #e6334d;
+}
+
+/* Success Modal */
+.success-icon {
+  width: 60px;
+  height: 60px;
+  background: #00d084;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.success-modal p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* Custom Modal Styles */
+.custom-modal p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.custom-input:focus {
+  border-color: #ff3b5c;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.cancel-btn, .confirm-btn {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn {
+  background: #f8f9fa;
+  color: #666;
+}
+
+.cancel-btn:hover {
+  background: #e9ecef;
+}
+
+.confirm-btn {
+  background: #ff3b5c;
+  color: white;
+}
+
+.confirm-btn:hover:not(:disabled) {
+  background: #e6334d;
+}
+
+.confirm-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.price-info-custom {
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.price-info-custom span {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.estimated-price {
+  background: #e8f5e8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.estimated-price span {
+  font-size: 14px;
+  color: #2d5a2d;
+  font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .app {
+    max-width: 100%;
+  }
+  
+  .packages-grid {
+    padding: 0 12px 32px;
+    gap: 8px;
+  }
+  
+  .package-card {
+    padding: 12px;
+  }
+  
+  .modal-overlay {
+    padding: 16px;
+  }
+}
